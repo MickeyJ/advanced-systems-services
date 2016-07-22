@@ -8,6 +8,7 @@ var index = require('./routes/index');
 
 var app = express();
 
+app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine({ beautify: true}));
@@ -16,7 +17,6 @@ app.engine('jsx', require('express-react-views').createEngine({ beautify: true})
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 
