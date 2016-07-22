@@ -10,7 +10,6 @@ var app = express();
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jsx');
-app.use(express.static(path.join(__dirname, 'public')));
 app.engine('jsx', require('express-react-views').createEngine({ beautify: true}));
 
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -21,14 +20,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 
-app.use(function(req, res, next) {
+app.use((req, res, next) =>{
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
 
 if (app.get('env') === 'development') {
-  app.use(function(err, req, res, next) {
+  app.use((err, req, res, next) =>{
     res.status(err.status || 500);
     console.log(err);
     res.render('error', {
@@ -38,7 +37,7 @@ if (app.get('env') === 'development') {
   });
 }
 
-app.use(function(err, req, res, next) {
+app.use((err, req, res, next) =>{
   res.status(err.status || 500);
   res.render('error', {
     message: err.message,
