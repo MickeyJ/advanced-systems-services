@@ -1,0 +1,21 @@
+{
+  "name": "advanced-systems-services-final",
+  "description": "",
+  "main": "",
+  "authors": [
+    "MickeyJ <develop.agility@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "materialize#^0.97.6"
+  }
+}
