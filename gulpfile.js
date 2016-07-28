@@ -53,4 +53,4 @@ gulp.task('watch', () =>{
   // gulp.watch('src/images/*', ['images']);
 });
 
-gulp.task('default', ['start', 'script', 'sass', 'watch']);
+gulp.task('default', ['start', 'images', 'script', 'sass', 'watch']);

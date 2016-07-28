@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import DefaultLayout from './layout'
+import DefaultLayout from './layouts/default'
 
 
 export default class Index extends Component{
@@ -10,7 +10,7 @@ export default class Index extends Component{
         description={this.props.description}>
         <section id="inner-content">
 
-          <h1>Home</h1>
+          <h3>Home</h3>
 
         </section>
       </DefaultLayout>

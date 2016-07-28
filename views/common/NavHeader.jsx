@@ -16,7 +16,7 @@ const NavHeader = () =>(
       <a href="/">Home</a>
       <span>|</span>
 
-      <a href="/about">About</a>
+      <a href="/services">Services</a>
       <span>|</span>
 
       <a href="/contact">Contact</a>

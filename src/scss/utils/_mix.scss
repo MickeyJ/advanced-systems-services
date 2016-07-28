@@ -1,3 +1,10 @@
+
+@mixin center-text($height, $align){
+  height: $height;
+  line-height: $height;
+  text-align: $align;
+}
+
 @mixin box-shadow($top, $left, $right, $blur, $color, $inset: false) {
   @if $inset {
     -webkit-box-shadow:inset $top $left $right $blur $color;

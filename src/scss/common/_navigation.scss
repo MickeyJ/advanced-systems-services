@@ -7,11 +7,8 @@
     margin-left: 0.3em;
     margin-right: 0.3em;
     padding: 2%;
-
     color: white;
-    //font-family: $open;
     font-weight: 300;
-
     @include text-shadow (0, 0.05em, 0.5em, black);
     @include transition(all 0.2s);
 
@@ -29,7 +26,6 @@
   }
 
   span{
-    //font-size: 1.5em;
     color: white;
   }
 

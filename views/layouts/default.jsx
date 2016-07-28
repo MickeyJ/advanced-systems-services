@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import Head from './common/Head'
-import NavHeader from './common/NavHeader'
-import Footer from './common/Footer'
+import Head from './../common/Head'
+import NavHeader from './../common/NavHeader'
+import Footer from './../common/Footer'
 
 const siteName = 'Advanced Systems Services';
 

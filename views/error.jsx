@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import DefaultLayout from './layout'
+import DefaultLayout from './layouts/default'
 
 export default class Error extends Component{
   render(){

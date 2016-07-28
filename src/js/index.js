@@ -1,15 +1,14 @@
 import $ from 'jquery'
-import {createHistory} from 'history'
-
-const history = createHistory();
-  console.log(history);
 
 $(function() {
+  const pathname = window.location.pathname;
 
-  $('#navigation').find('a[href="'+window.location.pathname+'"]').addClass('active-link');
-  history.listen(location => {
-    console.log(location);
-    $('#navigation').find(`a[href="${location.pathname}"]`).addClass('active-link');
-  });
+  const basePath = pathname.split('_')[0];
+
+  console.log(basePath);
+
+  $('#navigation').find('a[href="'+basePath+'"]').addClass('active-link');
+
+  $('.sub-nav').find('a[href="'+pathname+'"]').addClass('active-sub-link');
 
 });

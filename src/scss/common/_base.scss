@@ -1,5 +1,6 @@
 @import 'header';
 @import 'navigation';
+@import 'sub-nav';
 @import 'footer';
 
 html,
@@ -17,7 +18,6 @@ body,
 #all-wrap{
   min-height: 100%;
   position: relative;
-
 }
 
 #main-contain{
@@ -27,5 +27,12 @@ body,
 #inner-content{
   padding-left: 2%;
   padding-right: 2%;
+}
 
+.sub-content{
+  border: 1px solid #ccc;
+  float: right;
+  width: 85%;
+  padding: 2%;
+  text-align: center;
 }
