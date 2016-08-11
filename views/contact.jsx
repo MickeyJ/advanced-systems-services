@@ -10,7 +10,7 @@ export default class Contact extends Component{
         description={this.props.description}>
         <section id="inner-content">
 
-          <h3>{this.props.title}</h3>
+          <h4 className="page-title">{this.props.title}</h4>
 
         </section>
       </DefaultLayout>

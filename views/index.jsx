@@ -10,7 +10,7 @@ export default class Index extends Component{
         description={this.props.description}>
         <section id="inner-content">
 
-          <h3>Home</h3>
+          <h4 className="page-title">Home</h4>
 
         </section>
       </DefaultLayout>

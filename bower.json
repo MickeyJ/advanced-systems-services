@@ -9,11 +9,11 @@
   "homepage": "",
   "ignore": [
     "**/.*",
-    "node_modules",
-    "test",
-    "tests"
+    "public/bower_components",
+    "node_modules"
   ],
   "dependencies": {
-    "materialize": "materialize#^0.97.6"
+    "materialize": "materialize#^0.97.6",
+    "jquery": "^3.1.0"
   }
 }

@@ -8,7 +8,7 @@ export default class ServiceOne extends Component{
         title={this.props.title}
         description={this.props.description}>
         
-        <h4>{this.props.sub}</h4>
+        <h6 className="sub-title">{this.props.sub}</h6>
         
       </ServiceLayout>
     )

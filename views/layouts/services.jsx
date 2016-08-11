@@ -17,8 +17,8 @@ export default class Services extends Component{
         description={this.props.description}>
         <section id="inner-content">
 
-          <h3>{this.props.title}</h3>
-          
+          <h5 className="page-title">{this.props.title}</h5>
+
           <SubNav links={links} basepath="/services"/>
 
           <section className="sub-content">

@@ -1,4 +1,6 @@
 #navigation{
+  height: 50px;
+  line-height: 50px;
   font-size: 1.3em;
   background: $as-grey;
   text-align: right;
@@ -28,6 +30,5 @@
   span{
     color: white;
   }
-
 
 }

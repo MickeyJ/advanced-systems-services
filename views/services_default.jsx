@@ -8,7 +8,7 @@ export default class ServiceDefault extends Component{
         title={this.props.title}
         description={this.props.description}>
 
-        <h4>default</h4>
+        <h6 className="sub-title">default</h6>
 
       </ServiceLayout>
     )

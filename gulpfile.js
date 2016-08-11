@@ -6,7 +6,6 @@ var gulp       =  require('gulp'),
     source     = require('vinyl-source-stream'),
     imagemin   =  require('gulp-imagemin'),
     uglify     =  require('gulp-uglify'),
-    fontmin    = require('gulp-fontmin'),
     sass       =  require('gulp-sass');
 
 gulp.task('start',() =>{
@@ -50,7 +49,6 @@ gulp.task('images', () =>{
 gulp.task('watch', () =>{
   gulp.watch('src/js/*.js', ['script']);
   gulp.watch('src/scss/**/*.scss', ['sass']);
-  // gulp.watch('src/images/*', ['images']);
 });
 
-gulp.task('default', ['start', 'images', 'script', 'sass', 'watch']);
+gulp.task('default', ['start', 'script', 'sass', 'watch']);
